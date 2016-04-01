@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>IOT Simulator</h1>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Simulate IOT device</div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Enter ID</label>
+                <input type="number" class="form-control" id="btn_input_ID" />
+            </div>
+            <button type="button" class="btn btn-default">Ok</button>
+            <hr />
+            <div id="input_loader" style="">
+               <img src="../static/content/images/ajax-loader.gif" />
+                Working...
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
